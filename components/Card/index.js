@@ -1,23 +1,24 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Card from './components/Card';
 
-export default function App() {
+export default function Card() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Hello, Men!</Text>
-      <Card />
+    <View style={styles.card}>
+        <Text>Este é meu card!</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#000',
-    color: '#FFF',
+  card: {
+    display: 'flex',
+    backgroundColor: '#FAFAFA',
+    borderRadius: 3,
     alignItems: 'center',
     justifyContent: 'center',
+    width: '100%',
+    margin: 40,
+    height: 'auto',
   },
   text: {
       color: '#FFF'
